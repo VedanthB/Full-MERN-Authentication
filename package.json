@@ -4,9 +4,9 @@
   "description": "MERN Authentication, Login, Register, Verification email, Facebook, Google, Forget Password",
   "main": "server.js",
   "scripts": {
-    "dev": "server.js"
+    "dev": "nodemon server.js"
   },
-  "repository": { 
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/VedanthB/MERN-Auth.git"
   },
