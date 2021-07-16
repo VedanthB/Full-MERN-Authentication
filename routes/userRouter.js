@@ -5,7 +5,7 @@ const userCtrl = require("../controllers/userCtrl");
 
 router.post("/register", userCtrl.register);
 
-// router.post("/activation", userCtrl.activateEmail);
+router.post("/activation", userCtrl.activateEmail);
 
 // router.post("/login", userCtrl.login);
 
