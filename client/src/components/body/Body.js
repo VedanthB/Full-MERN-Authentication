@@ -56,7 +56,8 @@ function Body() {
           path="/edit_user/:id"
           component={isAdmin ? EditUser : NotFound}
           exact
-        /> */}
+        /> */
+        }
       </Switch>
     </section>
   );
