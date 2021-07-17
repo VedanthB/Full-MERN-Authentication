@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Login from "./auth/Login";
-// import Register from "./auth/Register";
+import Register from "./auth/Register";
 // import ActivationEmail from "./auth/ActivationEmail";
 import NotFound from "../utils/NotFound/NotFound";
 
@@ -24,17 +24,17 @@ function Body() {
         {/* <Route path="/" component={Home} exact /> */}
 
         <Route path="/login" component={isLogged ? NotFound : Login} exact />
-        {/* <Route
+         <Route
           path="/register"
           component={isLogged ? NotFound : Register}
           exact
-        />
+        /> 
 
-        <Route
+        {/* <Route
           path="/forgot_password"
           component={isLogged ? NotFound : ForgotPass}
           exact
-        /> */}
+        />  */}
         {/* <Route
           path="/user/reset/:token"
           component={isLogged ? NotFound : ResetPass}
