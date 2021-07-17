@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
-// import ActivationEmail from "./auth/ActivationEmail";
+import ActivationEmail from "./auth/ActivationEmail";
 import NotFound from "../utils/NotFound/NotFound";
 
 // import ForgotPass from "../body/auth/ForgotPassword";
@@ -24,11 +24,11 @@ function Body() {
         {/* <Route path="/" component={Home} exact /> */}
 
         <Route path="/login" component={isLogged ? NotFound : Login} exact />
-         <Route
+        <Route
           path="/register"
           component={isLogged ? NotFound : Register}
           exact
-        /> 
+        />
 
         {/* <Route
           path="/forgot_password"
@@ -39,13 +39,13 @@ function Body() {
           path="/user/reset/:token"
           component={isLogged ? NotFound : ResetPass}
           exact
-        />
+        /> */}
 
         <Route
           path="/user/activate/:activation_token"
           component={ActivationEmail}
           exact
-        /> */}
+        />
 
         {/* <Route
           path="/profile"
