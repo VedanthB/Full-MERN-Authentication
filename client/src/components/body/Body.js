@@ -9,7 +9,7 @@ import ForgotPass from "../body/auth/ForgotPassword";
 import ResetPass from "../body/auth/ResetPassword";
 
 import Profile from "../body/profile/Profile";
-// import EditUser from "../body/profile/EditUser";
+import EditUser from "../body/profile/EditUser";
 
 // import Home from "../body/home/Home";
 
@@ -30,16 +30,16 @@ function Body() {
           exact
         />
 
-         <Route
+        <Route
           path="/forgot_password"
           component={isLogged ? NotFound : ForgotPass}
           exact
-        />  
-       <Route
+        />
+        <Route
           path="/user/reset/:token"
           component={isLogged ? NotFound : ResetPass}
           exact
-        /> 
+        />
 
         <Route
           path="/user/activate/:activation_token"
@@ -47,17 +47,16 @@ function Body() {
           exact
         />
 
-         <Route
+        <Route
           path="/profile"
           component={isLogged ? Profile : NotFound}
           exact
         />
-        {/* <Route
+        <Route
           path="/edit_user/:id"
           component={isAdmin ? EditUser : NotFound}
           exact
-        />  */}
-      
+        />
       </Switch>
     </section>
   );
