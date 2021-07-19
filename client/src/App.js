@@ -11,6 +11,7 @@ import {
 import Header from "./components/header/Header";
 import Body from "./components/body/Body";
 import axios from "axios";
+import MouseParticles from "react-mouse-particles";
 
 function App() {
   const dispatch = useDispatch();
@@ -47,6 +48,7 @@ function App() {
         <Header />
         <Body />
       </div>
+      <MouseParticles g={1} color="random" cull="col,image-wrapper" />
     </Router>
   );
 }
